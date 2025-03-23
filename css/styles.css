@@ -1,0 +1,339 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000 !important;
+    /* Black background */
+    color: #dddddd !important;
+    /* White text */
+    line-height: 1.6;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #FFD700;
+    /* Gold for headings */
+}
+
+p {
+    color: #ddd;
+    /* Light gray for paragraphs */
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    color: #dddddd !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #dddddd !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000000;
+    /* Black */
+    border-bottom: 2px solid #FFD700;
+    /* Gold border */
+}
+
+.title {
+    color: #FFD700;
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.4em;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-size: 1.3em;
+}
+
+.nav-link:hover {
+    color: #FFD700 !important;
+    background-color: #000;
+}
+
+.navbar-toggler {
+    border-color: #FFD700;
+    /* Gold border for toggle */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFD700' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Video Container */
+.video-container {
+    margin: 20px 0;
+    /* text-align: center; */
+}
+
+.game-img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-3x {
+    margin-bottom: 15px;
+}
+
+/* Cards */
+.card {
+    background-color: #1a1a1a;
+    color: #dddddd !important;
+    /* Dark gray */
+    border: 1px solid #333333;
+    /* Subtle border */
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    /* transform: translateY(-5px); */
+    /* Lift effect on hover */
+    box-shadow: 0 0 10px #FFD700;
+    /* Gold glow on hover */
+}
+
+.card-title {
+    color: #FFD700;
+}
+
+.card-header:first-child {
+    border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+}
+
+.secondary-text {
+    color: #836f00;
+}
+
+.text-muted {
+    color: #dadada !important;
+}
+
+.btn-primary {
+    background-color: #FFD700;
+    border: none;
+    color: #000000;
+    /* Black text */
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffca2c;
+}
+
+/* Contact Form */
+.form-control,
+.form-select {
+    background-color: #1a1a1a;
+    /* Dark gray */
+    border: 1px solid #333333;
+    /* Subtle border */
+    color: #ffffff;
+}
+
+/* #contact-form */
+.form-control:focus,
+.form-select:focus {
+    background-color: #262626;
+    /* Slightly lighter on focus */
+    border-color: #FFD700;
+    /* Gold border on focus */
+    box-shadow: 0 0 5px #FFD700;
+    /* Gold glow */
+}
+
+#message-sent {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    /* Black */
+    border-top: 2px solid #FFD700;
+    /* Gold border */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #cccccc;
+    /* Light gray text */
+}
+
+/* From Uiverse.io by arghyaBiswasDev */
+/* The switch - the box around the slider */
+.switch {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    top: -5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ddd;
+    border: 1px solid #adb5bd;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.27em;
+    bottom: 0.22em;
+    background-color: darkgray;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #FFD700;
+    border: 1px solid #FFD700;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #000;
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.4em);
+    background-color: black;
+}
+
+/* Range slider enabled */
+.form-range::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #ddd;
+    background: black;
+}
+
+.form-range::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #ddd;
+    background: black;
+}
+
+.form-range::-ms-thumb {
+    box-shadow: 0 0 0 1px #ddd;
+    background: black;
+}
+
+.form-range::-webkit-slider-runnable-track {
+    background: #FFD700;
+}
+
+.form-range::-moz-slider-runnable-track {
+    background: #FFD700;
+}
+
+.form-range::-ms-slider-runnable-track {
+    background: #FFD700;
+}
+
+/* Range slider disabled */
+.form-range:disabled::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #ddd;
+    background: darkgray;
+}
+
+.form-range:disabled::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #ddd;
+    background: darkgray;
+}
+
+.form-range:disabled::-ms-thumb {
+    box-shadow: 0 0 0 1px #ddd;
+    background: darkgray;
+}
+
+.form-range:disabled::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+.form-range:disabled::-moz-slider-runnable-track {
+    background: #ddd;
+}
+
+.form-range:disabled::-ms-slider-runnable-track {
+    background: #ddd;
+}
+
+/* Range slider focus */
+.form-range:focus {
+    outline: 0;
+}
+
+.form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #ddd, 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    background: black;
+}
+
+.form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #ddd, 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    background: black;
+}
+
+.form-range:focus::-ms-range-thumb {
+    box-shadow: 0 0 0 1px #ddd, 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    background: black;
+}
+
+.form-range::-moz-focus-outer {
+    border: 0;
+}
