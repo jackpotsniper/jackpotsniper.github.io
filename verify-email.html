@@ -22,9 +22,12 @@
     </main>
     <script>
         if (chrome && chrome.runtime) {
-            chrome.runtime.sendMessage('igildijdgabdplfpnmhbcahlecmgaffi', {signInUrl: document.URL});
+            console.log("Sending message to extension");
+            chrome.runtime.sendMessage('igildijdgabdplfpnmhbcahlecmgaffi',
+                {signInUrl: document.URL},
+                (response) => console.log("Response:", JSON.stringify(response)));
         }
-        setTimeout(() => {window.location.href = "./signin-failed.html"}, 10 * 1000);
+        //setTimeout(() => {window.location.href = "./signin-failed.html"}, 10 * 1000);
     </script>
 </body>
 
