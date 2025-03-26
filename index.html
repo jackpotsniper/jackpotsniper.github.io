@@ -16,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://vjs.zencdn.net/8.22.0/video-js.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/favicon.png">
@@ -44,8 +45,8 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how-to-start">How to start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#setup">Setup</a></li>
                     <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
                     <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#where-to-play">Where to Play</a></li> -->
@@ -55,33 +56,43 @@
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- Intro Section -->
+    <section id="intro" class="section">
         <div class="container">
             <p>Jackpot Sniper is the ultimate tool for online casino players. It tracks progressive jackpots, identifies
                 the optimal time to play and automatically places minimal bets to maximize your chances of winning
                 jackpot!</p>
             <div class="video-container">
-                <img src="img/introduction.png" alt="Intro" width="500" class="mb-3 me-3" />
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe> -->
-                <p style="text-align: center;"><i>Video is comming soon...</i></p>
+                <video id="my-video" class="video-js" controls preload="auto" width="100%"
+                    poster="video/intro.png" data-setup="{}">
+
+                    <source src="video/intro.mp4" type="video/mp4" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
             </div>
         </div>
     </section>
 
-    <!-- How to Use Start -->
-    <section id="how-to-start" class="section">
+    <!-- Setup -->
+    <section id="setup" class="section">
         <div class="container">
-            <h2>How to start</h2>
+            <h2>Setup</h2>
             <p>Learn how to install and use Jackpot Sniper to start winning progressive jackpots today!</p>
             <div class="video-container">
-                <img src="img/how-to-start.png" alt="Intro" width="500" class="mb-3 me-3" />
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe> -->
-                <p style="text-align: center;"><i>Video is comming soon...</i></p>
+                <video id="my-video" class="video-js" controls preload="auto" width="100%"
+                    poster="video/setup.png" data-setup="{}">
+
+                    <source src="video/setup.mp4" type="video/mp4" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
             </div>
         </div>
     </section>
